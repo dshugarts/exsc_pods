@@ -1,17 +1,18 @@
-<div class="container">
-  <h1 class="lead">Register User</h1>
-  <h1 class="lead alert alert-danger" role="alert" ng-if="vm.message != ''">{{vm.message}}</h2>
-  <form ng-submit="vm.registerUser()">
-    <div>
-        <label for="username">Username:</label>
-        <input type="text" ng-model="vm.user.username" />
+<div class="container" id="login">
+  <h1 class="lead">Login</h1>
+    <h1 class="lead alert alert-danger" role="alert" ng-if="vm.message != ''">{{vm.message}}</h2>
+    <form class="col-md-12" ng-submit="vm.login()">
+    <div class="form-group col-md-8">
+          <label for="username">Username:</label>
+          <input type="text" ng-model="vm.user.username" />
     </div>
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" ng-model="vm.user.password" />
+    <div class="form-group col-md-8">
+          <label for="password">Password:</label>
+          <input type="password" ng-model="vm.user.password" />
     </div>
-    <input class="btn btn-default" type="submit" name="submit" value="Register" />
-    <a href="#!home">Cancel</a>
-  </form>
-
+    <div class="form-group col-md-8">
+          <input class="btn btn-success" type="submit" name="submit" value="Log In" />
+          <a href="#!register">Register</a>
+    </div>
+    </form>
 </div>

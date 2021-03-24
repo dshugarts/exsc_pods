@@ -1,3 +1,63 @@
+#welcome {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#disclaimer {
+  display: block;
+  text-align: left;
+  padding: 14px 16px;
+  margin-top: 10px;
+}
+#dataView {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 8%;
+}
+
+#gauge {
+  height: 500px;
+  width: 480px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.chartHead {
+  padding: 10px;
+}
+
+#myChart {
+  float: left;
+}
+
+.about-list {
+  list-style-type: disc;
+}
+
+#dataForm {
+  padding: 30px;
+}
+
+#register {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#login {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -11,13 +71,25 @@ body, html {
 }
 
 .instructions {
-  background-color: #333333;
-  color: #DDDDDD;
-  padding: 15px;
+  background-color: darkred;
+  color: white;
+  padding: 2px;
+}
+
+ol {
+  list-style-type: disc;
+}
+
+ol li {
+  float: none;
 }
 
 #entryForm {
   margin-top: 14px;
+}
+
+thead {
+  font-size: 14;
 }
 
 #container {
@@ -52,6 +124,7 @@ body, html {
   background-color: #333333;
   width: 100%;
   border-radius: 0px;
+  height: 3px;
 }
 
 ul {
