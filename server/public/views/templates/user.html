@@ -1,6 +1,97 @@
 <div ng-include="'views/partials/nav.html'"></div>
 <div class="container">
+    <div class="container">
+        <h2>Weekly Availability</h2>
+    </br>
+    </br>
+        <table class="table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Pod Number</th>
+                    <th>Cardio Machine</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="bg-info">
+                    <h3>March 29, 2021</h3>
+                    <tr>
+                        <td>12:00 PM</td>
+                        <td>14</td>
+                        <td>Treadmill</td>
+                        <td><button ng-click="vm.getGluData(vm.id)" class="btn btn-success">Book Pod</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </br>
+    <table class="table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Pod Number</th>
+                <th>Cardio Machine</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="bg-info">
+                <h3>March 30, 2021</h3>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>14</td>
+                    <td>Treadmill</td>
+                    <td><button ng-click="vm.getGluData(vm.id)" class="btn btn-success">Book Pod</button></td>
+            </tr>
+        </tbody>
+    </table>
+</br>
+    <table class="table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Pod Number</th>
+                <th>Cardio Machine</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="bg-info">
+                <h3>March 31, 2021</h3>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>14</td>
+                    <td>Treadmill</td>
+                    <td><button ng-click="vm.getGluData(vm.id)" class="btn btn-success">Book Pod</button></td>
+            </tr>
+        </tbody>
+    </table>
+</br>
+    <table class="table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Pod Number</th>
+                <th>Cardio Machine</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="bg-info">
+                <h3>April 2, 2021</h3>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>14</td>
+                    <td>Treadmill</td>
+                    <td><button ng-click="vm.getGluData(vm.id)" class="btn btn-success">Book Pod</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+</br>
+</br>
 
-    <h1 id="welcome" class="lead">Welcome, {{vm.userObject.userName}}!</h1>
-    <button class="btn btn-default" ng-click="vm.userService.logout()">Log Out</button>
+
+
+    <button class="btn btn-danger" ng-click="vm.userService.logout()">Log Out</button>
 </div>
+</br>
+</br>
+</br>
