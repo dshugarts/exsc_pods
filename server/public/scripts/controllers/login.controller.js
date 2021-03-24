@@ -31,9 +31,13 @@ myApp.controller('LoginController', ['$http', '$location', 'UserService', functi
     };
 
     self.registerUser = function () {
-      if (self.user.username === '' || self.user.password === '') {
+      if (self.user.passwordOne != self.user.passwordTwo) {
+        self.message = "Passwords do not match!";
+      } else if (self.user.username === '' || self.user.passwordOne === '' || self.user.passwordTwo === '') {
         self.message = "Choose a username and password!";
       } else {
+        self.user.password = self.user.passwordOne;
+        console.log(self.user);
         console.log('sending to server...', self.user);
         $http.post('/api/user/register', self.user).then(function (response) {
           console.log('success');
